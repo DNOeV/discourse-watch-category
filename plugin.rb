@@ -11,7 +11,8 @@ module ::WatchCategory
       # 'group' => ['category', 'another-top-level-category', ['parent-category', 'sub-category']],
       # 'everyone' makes every user watch the listed categories
       # 'everyone' => ['announcements']
-      'team-leaders' => ['team-leaders']
+      'team-leaders' => ['team-leaders'],
+      'outreach-team' => [['ressort-teams','outreach']]
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching)
 
