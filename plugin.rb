@@ -35,6 +35,7 @@ module ::WatchCategory
       'academic-team' => ['ressort-teams'],
       'outreach-team' => ['ressort-teams'],
       'everyone' => ['lounge'],
+      'everyone' => ['off-topic'],
       'everyone' => ['site-feedback'],
       'everyone' => ['knowledge-base']
     }
