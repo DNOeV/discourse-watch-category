@@ -36,7 +36,8 @@ module ::WatchCategory
       'outreach-team' => ['ressort-teams'],
       'everyone' => ['uncategorized'],
       'everyone' => ['lounge'],
-      'everyone' => ['site-feedback']
+      'everyone' => ['site-feedback'],
+      'everyone' => ['knowledge-base']
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :regular)
   end
