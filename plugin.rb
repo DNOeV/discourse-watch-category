@@ -16,15 +16,29 @@ module ::WatchCategory
       'bonn-team' => [['local-teams','bonn']],
       'frankfurt-team' => [['local-teams','frankfurt']],
       'heidelberg-team' => [['local-teams','heidelberg']],
-      'academic-team' => [['ressort-teams','academic-team']],
-      'outreach-team' => [['ressort-teams','outreach']]
+      'academic-team' => [['ressort-teams','academic']],
+      'outreach-team' => [['ressort-teams','outreach']],
+      'staff' => ['staff']
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching)
 
     groups_cats = {
-      
+      'everyone' => ['news']
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching_first_post)
+
+    groups_cats = {
+      'berlin-team' => ['local-teams'],
+      'bonn-team' => ['local-teams'],
+      'frankfurt-team' => ['local-teams'],
+      'heidelberg-team' => ['local-teams'],
+      'academic-team' => ['ressort-teams'],
+      'outreach-team' => ['ressort-teams'],
+      'everyone' => ['uncategorized'],
+      'everyone' => ['lounge'],
+      'everyone' => ['site-feedback']
+    }
+    WatchCategory.change_notification_pref_for_group(groups_cats, :regular)
   end
 
   def self.change_notification_pref_for_group(groups_cats, pref)
