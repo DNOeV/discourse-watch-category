@@ -34,7 +34,6 @@ module ::WatchCategory
       'heidelberg-team' => ['local-teams'],
       'academic-team' => ['ressort-teams'],
       'outreach-team' => ['ressort-teams'],
-      'everyone' => ['uncategorized'],
       'everyone' => ['lounge'],
       'everyone' => ['site-feedback'],
       'everyone' => ['knowledge-base']
