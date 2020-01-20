@@ -34,7 +34,7 @@ module ::WatchCategory
       'heidelberg-team' => ['local-teams'],
       'academic-team' => ['ressort-teams'],
       'outreach-team' => ['ressort-teams'],
-      'everyone' => ['lounge', 'off-topic', 'site-feedback', 'knowledge-base']
+      'everyone' => ['lounge', 'site-feedback', 'knowledge-base', 'uncategorized']
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :regular)
   end
