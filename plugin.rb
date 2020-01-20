@@ -12,6 +12,11 @@ module ::WatchCategory
       # 'everyone' makes every user watch the listed categories
       # 'everyone' => ['announcements']
       'team-leaders' => ['team-leaders'],
+      'berlin-team' => [['local-teams','berlin']],
+      'bonn-team' => [['local-teams','bonn']],
+      'frankfurt-team' => [['local-teams','frankfurt']],
+      'heidelberg-team' => [['local-teams','heidelberg']],
+      'academic-team' => [['ressort-teams','academic-team']],
       'outreach-team' => [['ressort-teams','outreach']]
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching)
