@@ -23,7 +23,7 @@ module ::WatchCategory
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching)
 
     groups_cats = {
-      'everyone' => ['news']
+      'everyone' => ['news', 'uncategorized']
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching_first_post)
 
@@ -34,7 +34,7 @@ module ::WatchCategory
       'heidelberg-team' => ['local-teams'],
       'academic-team' => ['ressort-teams'],
       'outreach-team' => ['ressort-teams'],
-      'everyone' => ['lounge', 'site-feedback', 'knowledge-base', 'uncategorized']
+      'everyone' => ['lounge', 'site-feedback', 'knowledge-base']
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :regular)
   end
